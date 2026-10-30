@@ -1,0 +1,9 @@
+# Example controller configuration for a deployment with a tight label
+# budget: at most 8 labels per batch, and a label is only worth buying
+# if it could move the deployed accuracy by at least 2 points.
+max_labels: 8
+min_labels: 2
+label_cost: 0.02
+prefer: base
+probe_every: 6
+refresh_probe: 4

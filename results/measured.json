@@ -1,0 +1,494 @@
+{
+  "batch_size": 64,
+  "headline": {
+    "clean_always_batch_norm_accuracy": 0.8907877604166667,
+    "clean_naive_labels_per_batch": 16.0,
+    "clean_portal_accuracy": 0.9052734375,
+    "clean_portal_labels_per_batch": 5.354166666666666,
+    "core_naive_accuracy_mixed_arrivals": 0.7613932291666666,
+    "corrupt_block_base_accuracy": 0.6941731770833333,
+    "corrupt_block_batch_norm_accuracy": 0.24674479166666669,
+    "corrupt_block_batch_norm_mean_harm": 0.46630859375,
+    "corrupt_block_portal_accuracy": 0.7242838541666667,
+    "corrupt_block_portal_mean_harm": 0.008138020833333332,
+    "corrupt_mixed_always_base_accuracy": 0.6959635416666666,
+    "corrupt_mixed_portal_accuracy": 0.8907877604166666,
+    "drift_portal_accuracy": 0.8984375,
+    "drift_portal_labels_per_batch": 8.552083333333332,
+    "drift_portal_no_refresh_accuracy": 0.8971354166666667,
+    "expanded_naive_accuracy_mixed_arrivals": 0.7630208333333333,
+    "expanded_portal_accuracy_mixed_arrivals": 0.8072916666666667,
+    "mixed_arrivals_always_batch_norm_accuracy": 0.6764322916666667,
+    "mixed_arrivals_always_batch_norm_mean_harm": 0.15608723958333331,
+    "mixed_arrivals_always_batch_norm_worst_batch": 0.197265625,
+    "mixed_arrivals_portal_accuracy": 0.8118489583333333,
+    "mixed_arrivals_portal_mean_harm": 0.025716145833333332,
+    "mixed_arrivals_portal_no_refresh_accuracy": 0.7652994791666666,
+    "mixed_arrivals_portal_worst_batch": 0.4296875
+  },
+  "n_batches": 12,
+  "scenarios": [
+    "clean",
+    "corrupt_mixed",
+    "corrupt_block",
+    "clean_block",
+    "mixed_arrivals",
+    "drift"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "table": {
+    "clean": {
+      "always_base": {
+        "accuracy": 0.9005533854166667,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.007649739583333329,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.841796875
+      },
+      "always_batch_norm": {
+        "accuracy": 0.8907877604166667,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.015624999999999998,
+        "regret_vs_oracle": 0.01741536458333333,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.82421875
+      },
+      "always_shrink": {
+        "accuracy": 0.9007161458333334,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.005533854166666666,
+        "regret_vs_oracle": 0.007486979166666657,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.853515625
+      },
+      "naive": {
+        "accuracy": 0.9016927083333334,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.0039062499999999996,
+        "regret_vs_oracle": 0.008300781250000014,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.8515625
+      },
+      "naive_expanded": {
+        "accuracy": 0.9016927083333334,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.0039062499999999996,
+        "regret_vs_oracle": 0.008463541666666671,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.8515625
+      },
+      "oracle": {
+        "accuracy": 0.91162109375,
+        "labels_per_batch": 64.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.0,
+        "total_labels": 768.0,
+        "worst_batch_accuracy": 0.861328125
+      },
+      "portal": {
+        "accuracy": 0.9052734375,
+        "labels_per_batch": 5.354166666666666,
+        "mean_harm": 0.00146484375,
+        "regret_vs_oracle": 0.002929687499999986,
+        "total_labels": 64.25,
+        "worst_batch_accuracy": 0.85546875
+      },
+      "portal_expanded": {
+        "accuracy": 0.9049479166666666,
+        "labels_per_batch": 7.53125,
+        "mean_harm": 0.00146484375,
+        "regret_vs_oracle": 0.00341796875,
+        "total_labels": 90.375,
+        "worst_batch_accuracy": 0.853515625
+      },
+      "portal_no_refresh": {
+        "accuracy": 0.9025065104166666,
+        "labels_per_batch": 3.822916666666667,
+        "mean_harm": 0.002278645833333333,
+        "regret_vs_oracle": 0.005696614583333343,
+        "total_labels": 45.875,
+        "worst_batch_accuracy": 0.853515625
+      }
+    },
+    "clean_block": {
+      "always_base": {
+        "accuracy": 0.8981119791666667,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.0,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.826171875
+      },
+      "always_batch_norm": {
+        "accuracy": 0.24674479166666669,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.6513671875,
+        "regret_vs_oracle": 0.6513671875,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.16796875
+      },
+      "always_shrink": {
+        "accuracy": 0.6336263020833333,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.26448567708333337,
+        "regret_vs_oracle": 0.26448567708333337,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.556640625
+      },
+      "naive": {
+        "accuracy": 0.9007161458333334,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.001953125,
+        "regret_vs_oracle": 0.004557291666666657,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.826171875
+      },
+      "naive_expanded": {
+        "accuracy": 0.9007161458333334,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.001953125,
+        "regret_vs_oracle": 0.004557291666666657,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.826171875
+      },
+      "oracle": {
+        "accuracy": 0.9033203125,
+        "labels_per_batch": 64.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.0,
+        "total_labels": 768.0,
+        "worst_batch_accuracy": 0.830078125
+      },
+      "portal": {
+        "accuracy": 0.8987630208333333,
+        "labels_per_batch": 11.5,
+        "mean_harm": 0.0006510416666666666,
+        "regret_vs_oracle": 0.007324218749999986,
+        "total_labels": 138.0,
+        "worst_batch_accuracy": 0.82421875
+      },
+      "portal_expanded": {
+        "accuracy": 0.8990885416666666,
+        "labels_per_batch": 11.9375,
+        "mean_harm": 0.0003255208333333333,
+        "regret_vs_oracle": 0.006510416666666685,
+        "total_labels": 143.25,
+        "worst_batch_accuracy": 0.82421875
+      },
+      "portal_no_refresh": {
+        "accuracy": 0.8968098958333333,
+        "labels_per_batch": 6.322916666666667,
+        "mean_harm": 0.0037434895833333335,
+        "regret_vs_oracle": 0.007324218749999986,
+        "total_labels": 75.875,
+        "worst_batch_accuracy": 0.802734375
+      }
+    },
+    "corrupt_block": {
+      "always_base": {
+        "accuracy": 0.6941731770833333,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.02604166666666667,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.251953125
+      },
+      "always_batch_norm": {
+        "accuracy": 0.24674479166666669,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.46630859375,
+        "regret_vs_oracle": 0.47347005208333337,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.16796875
+      },
+      "always_shrink": {
+        "accuracy": 0.5485026041666667,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.15576171875,
+        "regret_vs_oracle": 0.17171223958333334,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.203125
+      },
+      "naive": {
+        "accuracy": 0.72509765625,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.008951822916666668,
+        "regret_vs_oracle": 0.03417968749999997,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.26171875
+      },
+      "naive_expanded": {
+        "accuracy": 0.7262369791666666,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.008951822916666668,
+        "regret_vs_oracle": 0.03580729166666666,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.26171875
+      },
+      "oracle": {
+        "accuracy": 0.7600911458333333,
+        "labels_per_batch": 64.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.0,
+        "total_labels": 768.0,
+        "worst_batch_accuracy": 0.357421875
+      },
+      "portal": {
+        "accuracy": 0.7242838541666667,
+        "labels_per_batch": 14.760416666666666,
+        "mean_harm": 0.008138020833333332,
+        "regret_vs_oracle": 0.021484374999999972,
+        "total_labels": 177.125,
+        "worst_batch_accuracy": 0.298828125
+      },
+      "portal_expanded": {
+        "accuracy": 0.7203776041666667,
+        "labels_per_batch": 14.635416666666666,
+        "mean_harm": 0.006510416666666667,
+        "regret_vs_oracle": 0.027343749999999986,
+        "total_labels": 175.625,
+        "worst_batch_accuracy": 0.3046875
+      },
+      "portal_no_refresh": {
+        "accuracy": 0.7014973958333333,
+        "labels_per_batch": 7.552083333333333,
+        "mean_harm": 0.0009765625,
+        "regret_vs_oracle": 0.043457031249999986,
+        "total_labels": 90.625,
+        "worst_batch_accuracy": 0.255859375
+      }
+    },
+    "corrupt_mixed": {
+      "always_base": {
+        "accuracy": 0.6959635416666666,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.19547526041666666,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.62109375
+      },
+      "always_batch_norm": {
+        "accuracy": 0.8907877604166667,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.0006510416666666574,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.82421875
+      },
+      "always_shrink": {
+        "accuracy": 0.7884114583333333,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.10302734375000003,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.71875
+      },
+      "naive": {
+        "accuracy": 0.8894856770833333,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.001953125,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.810546875
+      },
+      "naive_expanded": {
+        "accuracy": 0.8889973958333333,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.005045572916666685,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.818359375
+      },
+      "oracle": {
+        "accuracy": 0.8914388020833333,
+        "labels_per_batch": 64.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.0,
+        "total_labels": 768.0,
+        "worst_batch_accuracy": 0.82421875
+      },
+      "portal": {
+        "accuracy": 0.8907877604166666,
+        "labels_per_batch": 10.989583333333334,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.0006510416666666713,
+        "total_labels": 131.875,
+        "worst_batch_accuracy": 0.82421875
+      },
+      "portal_expanded": {
+        "accuracy": 0.8927408854166666,
+        "labels_per_batch": 12.65625,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.0013020833333333565,
+        "total_labels": 151.875,
+        "worst_batch_accuracy": 0.8359375
+      },
+      "portal_no_refresh": {
+        "accuracy": 0.8904622395833333,
+        "labels_per_batch": 5.947916666666666,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.0009765625,
+        "total_labels": 71.375,
+        "worst_batch_accuracy": 0.82421875
+      }
+    },
+    "drift": {
+      "always_base": {
+        "accuracy": 0.80224609375,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.09928385416666666,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.6328125
+      },
+      "always_batch_norm": {
+        "accuracy": 0.8907877604166667,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.007975260416666668,
+        "regret_vs_oracle": 0.0107421875,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.82421875
+      },
+      "always_shrink": {
+        "accuracy": 0.8561197916666666,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.0017903645833333333,
+        "regret_vs_oracle": 0.045410156250000014,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.748046875
+      },
+      "naive": {
+        "accuracy": 0.8942057291666666,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.001953125,
+        "regret_vs_oracle": 0.008138020833333343,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.822265625
+      },
+      "naive_expanded": {
+        "accuracy": 0.8942057291666666,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.001953125,
+        "regret_vs_oracle": 0.009277343749999986,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.822265625
+      },
+      "oracle": {
+        "accuracy": 0.9025065104166667,
+        "labels_per_batch": 64.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.0,
+        "total_labels": 768.0,
+        "worst_batch_accuracy": 0.84375
+      },
+      "portal": {
+        "accuracy": 0.8984375,
+        "labels_per_batch": 8.552083333333332,
+        "mean_harm": 0.0003255208333333333,
+        "regret_vs_oracle": 0.0030924479166666713,
+        "total_labels": 102.625,
+        "worst_batch_accuracy": 0.841796875
+      },
+      "portal_expanded": {
+        "accuracy": 0.9005533854166666,
+        "labels_per_batch": 10.260416666666668,
+        "mean_harm": 0.00016276041666666666,
+        "regret_vs_oracle": 0.0021158854166666713,
+        "total_labels": 123.125,
+        "worst_batch_accuracy": 0.84375
+      },
+      "portal_no_refresh": {
+        "accuracy": 0.8971354166666667,
+        "labels_per_batch": 5.989583333333334,
+        "mean_harm": 0.00048828125,
+        "regret_vs_oracle": 0.004394531250000014,
+        "total_labels": 71.875,
+        "worst_batch_accuracy": 0.833984375
+      }
+    },
+    "mixed_arrivals": {
+      "always_base": {
+        "accuracy": 0.6930338541666667,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.14241536458333331,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.26171875
+      },
+      "always_batch_norm": {
+        "accuracy": 0.6764322916666667,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.15608723958333331,
+        "regret_vs_oracle": 0.15901692708333331,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.197265625
+      },
+      "always_shrink": {
+        "accuracy": 0.708984375,
+        "labels_per_batch": 0.0,
+        "mean_harm": 0.05387369791666667,
+        "regret_vs_oracle": 0.12646484375,
+        "total_labels": 0.0,
+        "worst_batch_accuracy": 0.20703125
+      },
+      "naive": {
+        "accuracy": 0.7613932291666666,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.04182942708333333,
+        "regret_vs_oracle": 0.10042317708333333,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.41796875
+      },
+      "naive_expanded": {
+        "accuracy": 0.7630208333333333,
+        "labels_per_batch": 16.0,
+        "mean_harm": 0.04036458333333333,
+        "regret_vs_oracle": 0.09944661458333333,
+        "total_labels": 192.0,
+        "worst_batch_accuracy": 0.421875
+      },
+      "oracle": {
+        "accuracy": 0.86376953125,
+        "labels_per_batch": 64.0,
+        "mean_harm": 0.0,
+        "regret_vs_oracle": 0.0,
+        "total_labels": 768.0,
+        "worst_batch_accuracy": 0.623046875
+      },
+      "portal": {
+        "accuracy": 0.8118489583333333,
+        "labels_per_batch": 14.854166666666668,
+        "mean_harm": 0.025716145833333332,
+        "regret_vs_oracle": 0.0485026041666667,
+        "total_labels": 178.25,
+        "worst_batch_accuracy": 0.4296875
+      },
+      "portal_expanded": {
+        "accuracy": 0.8072916666666667,
+        "labels_per_batch": 15.145833333333332,
+        "mean_harm": 0.030924479166666668,
+        "regret_vs_oracle": 0.05257161458333334,
+        "total_labels": 181.75,
+        "worst_batch_accuracy": 0.341796875
+      },
+      "portal_no_refresh": {
+        "accuracy": 0.7652994791666666,
+        "labels_per_batch": 13.0,
+        "mean_harm": 0.06640625,
+        "regret_vs_oracle": 0.08886718750000001,
+        "total_labels": 156.0,
+        "worst_batch_accuracy": 0.337890625
+      }
+    }
+  }
+}

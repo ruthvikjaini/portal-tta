@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portal-tta"
+version = "0.1.0"
+description = "A controller that decides, per batch and under scarce labels, whether a test-time intervention should be deployed at all."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["numpy", "pyyaml"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

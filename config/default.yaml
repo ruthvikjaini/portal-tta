@@ -1,0 +1,18 @@
+# Experiment defaults (mirrors portal_tta.experiment)
+scenarios:
+  - clean
+  - corrupt_mixed
+  - corrupt_block
+  - clean_block
+  - mixed_arrivals
+  - drift
+seeds: [0, 1, 2, 3, 4, 5, 6, 7]
+n_batches: 12
+batch_size: 64
+controller:
+  max_labels: 16
+  min_labels: 3
+  label_cost: 0.01
+  prefer: base
+  probe_every: 4
+  refresh_probe: 4
